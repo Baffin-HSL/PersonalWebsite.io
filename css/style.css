@@ -28,6 +28,20 @@ body a:hover{
 	text-decoration:none;
 }
 
+.subRowCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.subColumnCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .custom_navBar{
     height: 64px;
     position: sticky; 
@@ -46,32 +60,89 @@ body a:hover{
     background-color: rgba(251, 249, 246,0);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .custom_subItems{
     margin-top: 1.8rem;
-    margin-left: 1.2rem;
-    margin-right: 1.2rem;
+    margin-left: 0.9rem;
+    margin-right: 0.9rem;
+    padding: 1rem;
     border-radius: 15px;
     background-color: white;
 }
 
-.custom_title{
+/* 个人信息 */
+.personal_title{
     font-size: 22px;
     font-family:"SimHei"
 }
 
-.subRowCenter {
+.personal_content{
+    margin: 0rem;
+}
+
+.personal_content h4 span{
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.personal_content p{
+    margin-top: 0.4rem;
+    font-size: 14px;
+}
+
+/* 个人介绍 */
+.about{
+    float: right;
+	padding: 2rem;
+}
+
+.about span {
+	font-size: 16px;
+	color: #999;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+.about h6 {
+	font-size: 18px;
+	letter-spacing: .5px;
+	line-height: 20px;
+	color: #323648;
+	font-weight: 500;
+	margin-bottom: 0.8rem;
+    margin-top: 0.6rem;
+}
+
+.about p {
+	text-indent: 2em;
+	font-size: 15px;
+	color: #707579;
+}
+
+/* 技能 */
+.skills {
+    padding: 1.8rem;
+}
+.bar-grids {
+    margin-top: 1.6rem;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.subColumnCenter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.bar-grids p{
+	font-size: 10px;
+	color: #707579;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
+
+.progress {
+    height: 6px;
+    margin: 0.8rem;
+}
+
+/*--//skills--*/
+
