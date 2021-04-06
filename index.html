@@ -72,11 +72,14 @@
             <div class="custom_subItems my_projects">
                 <div class="title_view">
                     <h5>我的项目</h5>
-                    <div class="more_button"><img src="images/more.png" alt=""></div>
+                    <a href="allProject.html">
+                        <div class="more_button"><img src="images/more.png" alt="" width="20px" ></div>
+                    </a>
+                    
                 </div>
                 <ul>
                     <li>
-                        <a data-toggle="modal" href="#myModal">
+                        <a data-toggle="modal" href="#myModal" onclick="myfun(['images/ios.png','images/contact.png'])">
                             <img src="images/ios.png" width="80px" alt="">
                             <div class="project_content">
                                 <h6>嗨团团购</h6>
@@ -85,10 +88,10 @@
                         </a>
                     </li>
                     <li>
-                        <a data-toggle="modal" href="#myModal" onclick="myfun()">
+                        <a data-toggle="modal" href="#myModal" onclick="myfun(['images/contact.png'])">
                             <img src="images/ios.png" width="80px" alt="">
                             <div class="project_content">
-                                <h6>嗨团团购</h6>
+                                <h6></h6>
                                 <p>返利制的分销电商平台，经销商可以直接通过手机端上传运费模板文件。</p>
                             </div>
                         </a>
@@ -251,14 +254,6 @@
         </div>
     </div>
 
-    <div class="custom_items row">
-        <div class="col-md-4">
-            <div class="custom_subItems" style="height:180px">nihao</div>
-        </div>
-        <div class="col-md-8">
-            <div class="custom_subItems" style="height:180px">nihao</div>
-        </div>
-    </div>
 
     <!-- 模态框（Modal） -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -279,9 +274,6 @@
                             <div id="swip">
                                 
                             </div>
-                            <!-- <div class="carousel-item">
-                                <img src="images/uni_app.png" class="d-block w-100" alt="...">
-                            </div> -->
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
                             data-slide="prev">
@@ -300,14 +292,14 @@
     </div>
 
     <script type="text/javascript">
-        function myfun(arr) {
-            var arr=(typeof arr!="object")? [arr] : arr  //确保参数总是数组
+        function myfun(arr = []) {
+            console.log(arr);
             var swip = '';
             for (var i = 0; i < arr.length; i++) {
                 if(i == 0){
-                    swip = '<div class="carousel-item active"><img src="" class="d-block w-100" alt="..."></div>'
+                    swip = '<div class="carousel-item active"><img src="'+ arr[i]+'" class="d-block w-100" alt="..."></div>'
                 }else{
-                    swip += '<div class="carousel-item"><img src="images/ios.png" class="d-block w-100" alt="..."></div>'
+                    swip += '<div class="carousel-item"><img src="'+ arr[i]+ '" class="d-block w-100" alt="..."></div>'
                 }
             }
             document.getElementById('swip').innerHTML = swip;

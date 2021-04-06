@@ -1,31 +1,35 @@
-body{
-	margin:0;
-	font-family: 'Roboto Condensed', sans-serif;
-	background: rgb(251, 249, 246);
-    font-size:62.5%;
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: rgb(251, 249, 246);
+    font-size: 62.5%;
 }
 
-body a{
-	transition: 0.5s all;
-	-webkit-transition: 0.5s all;
-	-moz-transition: 0.5s all;
-	-o-transition: 0.5s all;
-	-ms-transition: 0.5s all;
-	text-decoration:none;
+body a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-decoration: none;
 }
-h1,h2,h3,h4,h5,h6{
-	margin:0;	
-	font-family: 'Overlock', cursive;
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Overlock', cursive;
 }
-p{
-	margin:0;
+
+p {
+    margin: 0;
 }
-ul,label{
-	margin:0;
-	padding:0;
+
+ul, label {
+    margin: 0;
+    padding: 0;
 }
-body a:hover{
-	text-decoration:none;
+
+body a:hover {
+    text-decoration: none;
 }
 
 .subRowCenter {
@@ -42,12 +46,12 @@ body a:hover{
     align-items: center;
 }
 
-.custom_navBar{
+.custom_navBar {
     height: 64px;
-    position: sticky; 
+    position: sticky;
     z-index: 1000;
     top: 0px;
-    margin:0;
+    margin: 0;
     /* background: rgb(251, 249, 246); */
     background-color: white;
     display: flex;
@@ -56,12 +60,12 @@ body a:hover{
     align-items: center;
 }
 
-.custom_items{
-    background-color: rgba(251, 249, 246,0);
+.custom_items {
+    background-color: rgba(251, 249, 246, 0);
     padding: 0 1rem;
 }
 
-.custom_subItems{
+.custom_subItems {
     width: 100%;
     margin-top: 1.8rem;
     border-radius: 14px;
@@ -69,15 +73,16 @@ body a:hover{
 }
 
 /* 个人介绍 */
-.contact{
+
+.contact {
     float: right;
-	padding: 2rem;
+    padding: 2rem;
 }
 
 .contact span {
-	font-size: 13px;
-	color: #999;
-	font-weight: 600;
+    font-size: 13px;
+    color: #999;
+    font-weight: 600;
 }
 
 .contact p {
@@ -85,93 +90,96 @@ body a:hover{
     font-size: 14px;
 }
 
-.contact_social{
+.contact_social {
     padding: 6px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.contact_social .img_box{
+.contact_social .img_box {
     margin-right: 12px;
     display: inline-block;
-	width: 45px;
-	height: 45px;
-	border-radius: 50%;
-	transition: all .3s;
-	background: #f9f9f9;
-	position: relative;
-	padding: 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: all .3s;
+    background: #f9f9f9;
+    position: relative;
+    padding: 5px;
 }
+
 .contact_social .img_box::after {
-	content: '';
-	display: inline-block;
-	position: absolute;
-	text-align: center;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	transition: all 1s;
-	border-top: 5px solid #209fe9;
-	border-bottom: 5px solid #209fe9;
-	transform: rotateZ(30deg);
-	opacity: 0;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all 1s;
+    border-top: 5px solid #209fe9;
+    border-bottom: 5px solid #209fe9;
+    transform: rotateZ(30deg);
+    opacity: 0;
 }
 
 .contact_social .img_box img {
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	display: inline-block;
-
-	transition: all .3s;
-	transform: scale(0.98);
-	z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all .3s;
+    transform: scale(0.98);
+    z-index: 1;
 }
 
 .contact_social .img_box:hover::after {
-	opacity: 1;
-	transform: rotateZ(360deg);
+    opacity: 1;
+    transform: rotateZ(360deg);
 }
 
 .contact_social>div:hover img {
-	transform: scale(1.01)
+    transform: scale(1.01)
 }
 
-.about{
+.about {
     float: right;
-	padding: 2rem;
+    padding: 2rem;
 }
 
 .about span {
-	font-size: 16px;
-	color: #999;
-	letter-spacing: 2px;
-	font-weight: 600;
+    font-size: 16px;
+    color: #999;
+    letter-spacing: 2px;
+    font-weight: 600;
 }
+
 .about h6 {
-	font-size: 18px;
-	letter-spacing: .5px;
-	line-height: 20px;
-	color: #323648;
-	font-weight: 500;
-	margin-bottom: 0.8rem;
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 20px;
+    color: #323648;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
     margin-top: 0.6rem;
 }
 
 .about p {
-	text-indent: 2em;
-	font-size: 15px;
-	color: #707579;
+    text-indent: 2em;
+    font-size: 15px;
+    color: #707579;
 }
 
 /* 技能 */
+
 .skills {
     padding: 1.8rem;
 }
+
 .bar-grids {
     margin-top: 1.6rem;
     display: flex;
@@ -179,10 +187,10 @@ body a:hover{
     align-items: center;
 }
 
-.bar-grids p{
+.bar-grids p {
     margin-top: 4px;
-	font-size: 10px;
-	color: #707579;
+    font-size: 10px;
+    color: #707579;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -194,50 +202,54 @@ body a:hover{
 }
 
 /* 我的作品 */
+
 .my_projects {
     padding: 1.8rem;
 }
 
-.title_view{
+.title_view {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
 }
 
-.title_view .more_button{
-    width: 35px;
-    height: 35px;
+.title_view .more_button {
+    width: 28px;
+    height: 28px;
     border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.title_view .more_button:hover{
-    background-color: violet;
+.title_view .more_button:hover {
+    background-color: wheat;
 }
 
-.my_projects ul{
+.my_projects ul {
     margin: 14px 0px;
     /* 去掉黑点 */
     list-style: none;
 }
 
-.my_projects ul li{
+.my_projects ul li {
     margin-top: 10px;
 }
 
-.my_projects ul li a{
+.my_projects ul li a {
     display: flex;
     flex-direction: row;
-    align-items: center; 
+    align-items: center;
     padding: 4px;
     border-radius: 6px;
 }
 
-.my_projects ul li a:hover{
+.my_projects ul li a:hover {
     background-color: wheat;
 }
 
-.my_projects ul li img{
+.my_projects ul li img {
     border-radius: 14px;
 }
 
@@ -246,13 +258,16 @@ body a:hover{
     height: 80px;
 }
 
-.project_content h6{
+.project_content h6 {
     color: black;
 }
 
-.project_content p{
+.project_content p {
     margin-top: 8px;
-	font-size: 12px;
-	color: #707579;
+    font-size: 12px;
+    color: #707579;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
-
